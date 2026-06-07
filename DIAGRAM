@@ -11,58 +11,63 @@
         </mxCell>
         
         <!-- Switch -->
-        <mxCell id="switch" value="Switch&#xa;Gigabit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="switch" value="Switch&#xa;Gigabit (8 ports)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="500" y="160" width="120" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Baie de brassage -->
-        <mxCell id="baie" value="Baie de brassage&#xa;(patch panel)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <!-- Baie de brassage (4 prises) -->
+        <mxCell id="baie" value="Baie de brassage&#xa;(4 prises RJ45)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="500" y="280" width="120" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Prise murale 1 (Bureau 1) -->
-        <mxCell id="prise1" value="Prise murale&#xa;Bureau 1" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <!-- Prise murale 1 (pour imprimante) -->
+        <mxCell id="prise_imp" value="Prise murale 1&#xa;(Imprimante)" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="180" y="400" width="100" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Prise murale 2 (Bureau 2) -->
-        <mxCell id="prise2" value="Prise murale&#xa;Bureau 2" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <!-- Prise murale 2 (inutilisée) -->
+        <mxCell id="prise2" value="Prise murale 2&#xa;(libre)" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="340" y="400" width="100" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Prise murale 3 (Bureau 3) -->
-        <mxCell id="prise3" value="Prise murale&#xa;Bureau 3" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <!-- Prise murale 3 (inutilisée) -->
+        <mxCell id="prise3" value="Prise murale 3&#xa;(libre)" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="500" y="400" width="100" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Imprimante connectée à la prise murale 3 -->
+        <!-- Prise murale 4 (inutilisée) -->
+        <mxCell id="prise4" value="Prise murale 4&#xa;(libre)" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="660" y="400" width="100" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Imprimante connectée à la prise murale 1 -->
         <mxCell id="imprimante" value="Imprimante&#xa;Konica Minolta&#xa;192.168.1.202" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="680" y="390" width="120" height="70" as="geometry"/>
+          <mxGeometry x="180" y="520" width="120" height="70" as="geometry"/>
         </mxCell>
         
-        <!-- Laptop (Wi-Fi) -->
-        <mxCell id="laptop" value="Laptop stagiaire&#xa;192.168.1.124" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="680" y="520" width="120" height="50" as="geometry"/>
+        <!-- Laptop stagiaire (Wi-Fi) -->
+        <mxCell id="laptop" value="Laptop stagiaire&#xa;192.168.1.124 (Wi-Fi)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="680" y="520" width="130" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Poste fixe filaire (via prise murale 1) -->
-        <mxCell id="desktop" value="Poste fixe&#xa;service admin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="160" y="530" width="120" height="50" as="geometry"/>
+        <!-- Autre poste (Wi-Fi) -->
+        <mxCell id="autre_poste" value="Poste responsable&#xa;(Wi-Fi)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="860" y="520" width="130" height="50" as="geometry"/>
         </mxCell>
         
-        <!-- Connexions -->
+        <!-- Connexions réseau -->
         <!-- Box -> Switch -->
         <mxCell id="edge1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1" source="box" target="switch">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <!-- Switch -> Baie -->
+        <!-- Switch -> Baie de brassage -->
         <mxCell id="edge2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0066CC;" edge="1" parent="1" source="switch" target="baie">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <!-- Baie -> Prises murales -->
-        <mxCell id="edge3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise1">
+        <!-- Baie -> Prises murales (4 connexions) -->
+        <mxCell id="edge_baie_prise1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise_imp">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="560" y="355"/>
@@ -70,7 +75,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise2">
+        <mxCell id="edge_baie_prise2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="560" y="355"/>
@@ -78,36 +83,44 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise3">
+        <mxCell id="edge_baie_prise3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="355"/>
+              <mxPoint x="550" y="355"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_baie_prise4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;" edge="1" parent="1" source="baie" target="prise4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="355"/>
+              <mxPoint x="710" y="355"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Connexion de l'imprimante à sa prise murale -->
+        <mxCell id="edge_imp" value="Câble Ethernet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" edge="1" parent="1" source="prise_imp" target="imprimante">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <!-- Connexion de l'imprimante à la prise murale 3 -->
-        <mxCell id="edge6" value="Câble Ethernet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;" edge="1" parent="1" source="prise3" target="imprimante">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="550" y="450"/>
-              <mxPoint x="740" y="450"/>
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Laptop en Wi-Fi (depuis la box) -->
-        <mxCell id="edge7" value="Wi-Fi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#00AA00;dashed=1;" edge="1" parent="1" source="box" target="laptop">
+        <!-- Connexions Wi-Fi (depuis la box) -->
+        <mxCell id="wifi_laptop" value="Wi-Fi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#00AA00;dashed=1;" edge="1" parent="1" source="box" target="laptop">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="560" y="100"/>
-              <mxPoint x="740" y="100"/>
-              <mxPoint x="740" y="480"/>
+              <mxPoint x="745" y="100"/>
+              <mxPoint x="745" y="480"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        
-        <!-- Poste fixe connecté à la prise murale 1 -->
-        <mxCell id="edge8" value="Filaire" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#CC0000;" edge="1" parent="1" source="prise1" target="desktop">
+        <mxCell id="wifi_autre" value="Wi-Fi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#00AA00;dashed=1;" edge="1" parent="1" source="box" target="autre_poste">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="230" y="490"/>
+              <mxPoint x="560" y="100"/>
+              <mxPoint x="925" y="100"/>
+              <mxPoint x="925" y="480"/>
             </Array>
           </mxGeometry>
         </mxCell>
